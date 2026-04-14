@@ -21,11 +21,11 @@ WantedBy=multi-user.target
 ```
 
 Then run:
-sudo systemctl daemon-reexec
-sudo systemctl daemon-reload
-sudo systemctl enable parking_tracker_workflow.service
-sudo systemctl start parking_tracker_workflow.service
-sudo systemctl status parking_tracker_workflow.service
+* sudo systemctl daemon-reexec
+* sudo systemctl daemon-reload
+* sudo systemctl enable parking_tracker_workflow.service
+* sudo systemctl start parking_tracker_workflow.service
+* sudo systemctl status parking_tracker_workflow.service
 
 To stop the service:
 sudo systemctl stop parking_tracker_workflow.service
