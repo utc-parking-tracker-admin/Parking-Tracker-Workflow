@@ -24,7 +24,7 @@ while True: # Repeat forever
     if 7 <= hour < 19: # only run between 7am and 7pm
         try:
             subprocess.run(["rpicam-still", "-n", "-o", image]) # take picture and save to specified path
-            results = client.infer(image, model_id="parking-tracker-training-data-2y5xf/2") # process the image with the computer vision model
+            results = client.infer(image, model_id="parking-tracker-training-data-2y5xf/3") # process the image with the computer vision model
             count = len(results["predictions"]) # count the cars in the image 
             data = {"time": now_utc, "occupied": count} # data to be sent to Firestore
             doc_ref = db.collection("Lot 12").document("Totals") # reference to the Firestore document where the data will be stored
